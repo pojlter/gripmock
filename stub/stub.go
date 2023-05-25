@@ -62,6 +62,7 @@ type Input struct {
 type Output struct {
 	Data  map[string]interface{} `json:"data"`
 	Error string                 `json:"error"`
+	Code  int		     `json:"code"`	
 }
 
 func addStub(w http.ResponseWriter, r *http.Request) {
